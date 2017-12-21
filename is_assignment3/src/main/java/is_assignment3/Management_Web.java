@@ -1,5 +1,20 @@
 package is_assignment3;
 
-public class Management_Web {
+import javax.jws.WebMethod;
+import javax.jws.WebService;
 
+@WebService
+public class Management_Web {
+	@WebMethod
+	public String addFollower(String email, String brand, int priceMin, int priceMax) {
+		return "";
+	}
+	@WebMethod
+	public String listFollowers() {
+		return "";
+	}
+	@WebMethod
+	public String removeFollower(String email) {
+		return "";
+	}
 }

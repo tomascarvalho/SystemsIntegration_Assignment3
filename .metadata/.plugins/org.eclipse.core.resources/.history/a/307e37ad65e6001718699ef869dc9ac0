@@ -1,0 +1,15 @@
+package is_assignment3;
+
+public class Management_Web {
+	public String addFollower(String email, String brand, int priceMin, int priceMax) {
+		return "";
+	}
+	
+	public String listFollowers() {
+		return "";
+	}
+	
+	public String removeFollower(String email) {
+		return "";
+	}
+}
