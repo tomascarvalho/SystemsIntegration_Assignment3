@@ -10,12 +10,9 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
     <cxf:configuration name="CXF_Configuration" enableMuleSoapHeaders="true" initializeStaticBusInstance="true" doc:name="CXF Configuration"/>
-    <db:generic-config name="Postrgres_Configuration_A3" url="jdbc:postgresql://localhost:5433/is_assignment3?password=postgres&amp;user=postgres" driverClassName="org.postgresql.Driver" doc:name="Generic Database Configuration"/>
     <flow name="is_assignment3Flow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP Index"/>
         <cxf:jaxws-service configuration-ref="CXF_Configuration" serviceClass="is_assignment3.Management_Web" doc:name="CXF"/>
-        <db:select config-ref="Postrgres_Configuration_A3" doc:name="Database">
-            <db:parameterized-query/>
-        </db:select>
+        <db:no-operation-selected config-ref="" doc:name="Database"/>
     </flow>
 </mule>
