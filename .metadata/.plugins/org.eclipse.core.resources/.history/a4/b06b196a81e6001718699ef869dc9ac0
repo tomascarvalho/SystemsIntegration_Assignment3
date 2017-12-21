@@ -38,11 +38,8 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
                     </otherwise>
                 </choice>
             </when>
-            <when expression="method.name.equals(&quot;listFollowers&quot;)">
-                <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;ListFollowers called&quot;]" level="DEBUG" doc:name="Logger"/>
-                <db:select config-ref="Postrgres_Configuration_A3" doc:name="Database">
-                    <db:parameterized-query><![CDATA[SELECT * FROM followers;]]></db:parameterized-query>
-                </db:select>
+            <when expression="">
+                <logger level="INFO" doc:name="Logger"/>
             </when>
             <otherwise>
                 <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;Not a valid function&quot;]#[exception] #[payload[0]]" level="ERROR" doc:name="Logger"/>
