@@ -94,8 +94,8 @@ INDEX VERSION 1.127+/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Ass
 2968202652.index
 3243420000.index
 1173413637.index
-2083755125.index
 2446438964.index
+2083755125.index
 2560927377.index
 3659894562.index
 2704973956.index
@@ -230,10 +230,10 @@ INDEX VERSION 1.127+/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Ass
 2493696043.index
 3157663476.index
 2709524847.index
-6854961.index
-190716352.index
-3996382843.index
 1701421812.index
+6854961.index
+3996382843.index
+190716352.index
 3192033336.index
 4140351050.index
 3243825869.index
@@ -436,8 +436,8 @@ INDEX VERSION 1.127+/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Ass
 194009948.index
 907996717.index
 914370860.index
-1829739664.index
 1108412917.index
+1829739664.index
 3544253512.index
 2665317079.index
 2583796361.index

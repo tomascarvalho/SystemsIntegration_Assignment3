@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
+
 public class Main {
 
     private static final Pattern VALID_EMAIL_ADDRESS_REGEX =
@@ -44,6 +45,7 @@ public class Main {
         System.out.println("\n0 - Exit");
         System.out.print("Choice: ");
     }
+
 
     public static void main(String[] args) {
 	    // write your code here

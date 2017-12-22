@@ -6680,3 +6680,54 @@ Caused by: org.mule.mvel2.CompileException: [Error: illegal use of operator: +]
 **********************************************************************
 2017-12-22 11:25:29,594 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 22-DEC-17 11:25:29 Executing query: SELECT * from followers WHERE email=tomas@hotmail.com]
 2017-12-22 11:25:29,646 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 22-DEC-17 11:25:29 Removed follower: tomas@hotmail.com
+2017-12-22 11:28:46,480 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'is_assignment3'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-22 11:28:46,666 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-22 11:28:46,828 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-22 11:28:46,986 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-22 11:28:46,986 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-22 11:28:47,071 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2f08c4b: startup date [Fri Dec 22 11:28:47 WET 2017]; root of context hierarchy
+2017-12-22 11:28:48,992 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-22 11:28:49,497 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-22 11:28:49,497 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-22 11:28:50,335 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-22 11:28:50,948 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx2.log
+2017-12-22 11:28:50,966 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx2.log
+2017-12-22 11:28:51,119 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-22 11:28:51,128 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: is_assignment3Flow
+2017-12-22 11:28:51,128 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@78da899f
+2017-12-22 11:28:51,191 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: is_assignment3Flow.stage1
+2017-12-22 11:28:51,300 [main] INFO  org.mule.module.cxf.config.WebServiceFactoryBean - Built CXF Inbound MessageProcessor for service class is_assignment3.Management_Web
+2017-12-22 11:28:52,383 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-22 11:28:52,384 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-22 11:28:52,395 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'is_assignment3'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-22 11:28:52,403 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-22 11:28:52,405 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-22 11:28:52,496 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2017-12-22 11:28:52,500 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-22 11:28:52,505 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-22 11:28:52,507 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: is_assignment3Flow
+2017-12-22 11:28:52,508 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: is_assignment3Flow.stage1
+2017-12-22 11:28:52,595 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-22 11:28:52,637 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: is_assignment3                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-22 11:42:11,788 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 22-DEC-17 11:42:11 Executing query: SELECT * from followers WHERE email=filipius@araujo.com]
+2017-12-22 11:42:12,027 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 22-DEC-17 11:42:12 Removed follower: filipius@araujo.com
