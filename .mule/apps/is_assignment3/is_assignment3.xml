@@ -30,11 +30,11 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
                         <set-payload value="#[&quot;Already following&quot;]" doc:name="Set Payload"/>
                     </when>
                     <otherwise>
-                        <logger level="DEBUG" doc:name="Logger" message="#[&quot;Not present in DB&quot;]"/>
+                        <logger message="#[&quot;Not present in DB&quot;]" level="DEBUG" doc:name="Logger"/>
                         <db:insert config-ref="Postrgres_Configuration_A3" doc:name="Database">
                             <db:parameterized-query><![CDATA[INSERT INTO followers (email, brand, price_min, price_max) values (#[flowVars.email], #[flowVars.brand], #[flowVars.priceMin], #[flowVars.priceMax]);]]></db:parameterized-query>
                         </db:insert>
-                        <set-payload value="#[payload.toString()]" doc:name="Set Payload"/>
+                        <set-payload value="#[&quot;Added follower: &quot;]#[flowVars.email]" doc:name="Set Payload"/>
                     </otherwise>
                 </choice>
             </when>
@@ -43,6 +43,27 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
                 <db:select config-ref="Postrgres_Configuration_A3" doc:name="Database">
                     <db:parameterized-query><![CDATA[SELECT * FROM followers;]]></db:parameterized-query>
                 </db:select>
+            </when>
+            <when expression="method.name.equals(&quot;removeFollower&quot;)">
+                <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;RemoveFollower called&quot;]" level="DEBUG" doc:name="Logger"/>
+                <set-variable variableName="email" value="#[payload]" doc:name="Variable_email"/>
+                <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;Executing query: SELECT * from followers WHERE email=&quot;]#[flowVars.email]]" level="INFO" doc:name="Logger"/>
+                <db:select config-ref="Postrgres_Configuration_A3" doc:name="Database">
+                    <db:parameterized-query><![CDATA[SELECT * from followers WHERE email=#[flowVars.email];]]></db:parameterized-query>
+                </db:select>
+                <choice doc:name="Choice">
+                    <when expression="#[payload.size() != 0]">
+                        <db:delete config-ref="Postrgres_Configuration_A3" doc:name="Database">
+                            <db:parameterized-query><![CDATA[DELETE FROM followers WHERE email=#[flowVars.email];]]></db:parameterized-query>
+                        </db:delete>
+                        <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;Removed follower: &quot;]#[flowVars.email]" level="INFO" doc:name="Logger"/>
+                        <set-payload value="#[&quot;Removed follower: &quot; #[flowVars.email]]" doc:name="Set Payload"/>
+                    </when>
+                    <otherwise>
+                        <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;No follower found with this emai. Payload: &quot; #[payload.toString()]]" level="INFO" doc:name="Logger"/>
+                        <set-payload value="#[&quot;No follower was found with this email&quot;]" doc:name="Set Payload"/>
+                    </otherwise>
+                </choice>
             </when>
             <otherwise>
                 <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;Not a valid function&quot;]#[exception] #[payload[0]]" level="ERROR" doc:name="Logger"/>

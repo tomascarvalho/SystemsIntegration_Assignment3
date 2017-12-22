@@ -18,6 +18,24 @@ public class Main {
         return matcher.find();
     }
 
+    private static String inputEmail() {
+        String email;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Email: ");
+        email = sc.nextLine();
+        System.out.println(); //aesthetic new line
+
+        while (!validate(email)){ // While email not valid
+            System.out.println("Please enter a valid email!");
+            System.out.print("Email: ");
+            email = sc.nextLine();
+            System.out.println(); //aesthetic new line
+        }
+        email = email.toLowerCase();
+        return email;
+    }
+
     private static void displayMenu() {
         System.out.println("Menu");
         System.out.println("1 - Add follower");
@@ -31,6 +49,8 @@ public class Main {
 	    // write your code here
         ManagementWebService managementWebService = new ManagementWebService();
         ManagementWeb managementWeb = managementWebService.getManagementWebPort();
+        String email, brand;
+        int priceMin, priceMax;
 
         String choice = new String();
         Scanner sc = new Scanner(System.in);
@@ -43,20 +63,8 @@ public class Main {
         while (!choice.equals("0")){
             switch(choice) {
                 case "1":
-                    String email, brand;
-                    int priceMin, priceMax;
-                    System.out.print("Email: ");
-                    email = sc.nextLine();
-                    System.out.println(); //aesthetic new line
 
-                    while (!validate(email)){ // While email not valid
-                        System.out.println("Please enter a valid email!");
-                        System.out.print("Email: ");
-                        email = sc.nextLine();
-                        System.out.println(); //aesthetic new line
-                    }
-                    email = email.toLowerCase();
-
+                    email = inputEmail();
                     System.out.print("Brand: ");
                     brand = sc.nextLine();
                     System.out.println(); //aesthetic new line
@@ -88,6 +96,11 @@ public class Main {
 
                 case "2":
                     System.out.println(managementWeb.listFollowers());
+                    break;
+                case "3":
+                    System.out.println("To remove a follower, enter his email");
+                    email = inputEmail();
+                    System.out.println(managementWeb.removeFollower(email));
                     break;
                 default:
                     System.out.println("Invalid input!");
