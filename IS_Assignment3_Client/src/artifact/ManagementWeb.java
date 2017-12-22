@@ -25,6 +25,7 @@ public interface ManagementWeb {
 
     /**
      * 
+     * @param arg1
      * @param arg0
      * @return
      *     returns java.lang.String
@@ -35,12 +36,15 @@ public interface ManagementWeb {
     @ResponseWrapper(localName = "removeFollowerResponse", targetNamespace = "http://is_assignment3/", className = "artifact.RemoveFollowerResponse")
     public String removeFollower(
         @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        String arg1);
 
     /**
      * 
      * @param arg3
      * @param arg2
+     * @param arg4
      * @param arg1
      * @param arg0
      * @return
@@ -58,7 +62,9 @@ public interface ManagementWeb {
         @WebParam(name = "arg2", targetNamespace = "")
         int arg2,
         @WebParam(name = "arg3", targetNamespace = "")
-        int arg3);
+        int arg3,
+        @WebParam(name = "arg4", targetNamespace = "")
+        String arg4);
 
     /**
      * 

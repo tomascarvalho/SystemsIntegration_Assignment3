@@ -4,6 +4,7 @@ import artifact.ManagementWeb;
 import artifact.ManagementWebService;
 
 import java.util.Scanner;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,6 +18,11 @@ public class Main {
     private static boolean validate(String emailStr) {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(emailStr);
         return matcher.find();
+    }
+
+    private static String generateToken() {
+        String token = UUID.randomUUID().toString().toUpperCase();
+        return token;
     }
 
     private static String inputEmail() {
@@ -35,6 +41,16 @@ public class Main {
         }
         email = email.toLowerCase();
         return email;
+    }
+
+    private static String inputBrand() {
+        String brand;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Brand: ");
+        brand = sc.nextLine();
+        System.out.println(); //aesthetic new line
+        brand = brand.toLowerCase();
+        return brand;
     }
 
     private static void displayMenu() {
@@ -67,10 +83,7 @@ public class Main {
                 case "1":
 
                     email = inputEmail();
-                    System.out.print("Brand: ");
-                    brand = sc.nextLine();
-                    System.out.println(); //aesthetic new line
-                    brand = brand.toLowerCase();
+                    brand = inputBrand();
 
                     System.out.println("Price Range");
                     do {
@@ -93,7 +106,7 @@ public class Main {
                         priceMax = sc.nextInt();
                     } while (priceMax < priceMin);
 
-                    System.out.println(managementWeb.addFollower(email, brand, priceMin, priceMax));
+                    System.out.println(managementWeb.addFollower(email, brand, priceMin, priceMax, generateToken()));
                     break;
 
                 case "2":
@@ -102,7 +115,8 @@ public class Main {
                 case "3":
                     System.out.println("To remove a follower, enter his email");
                     email = inputEmail();
-                    System.out.println(managementWeb.removeFollower(email));
+                    brand = inputBrand();
+                    System.out.println(managementWeb.removeFollower(email, brand));
                     break;
                 default:
                     System.out.println("Invalid input!");
