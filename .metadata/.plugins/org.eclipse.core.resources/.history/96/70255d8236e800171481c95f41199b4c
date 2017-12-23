@@ -93,7 +93,7 @@ http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smt
         </choice>
         <catch-exception-strategy doc:name="Catch Exception Strategy">
             <logger message="Caught Exception" level="INFO" doc:name="Logger"/>
-            <logger message="Excpetion Caught at: #[payload]" level="INFO" doc:name="Logger"/>
+            <logger message="Excpetion Caught at: #[payload]" level="ERROR" doc:name="Logger" category="file"/>
             <set-payload value="Exception Caught. Please try again." doc:name="Set Payload"/>
         </catch-exception-strategy>
     </flow>

@@ -83,7 +83,7 @@ http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smt
             </when>
             <when expression="method.name.equals(&quot;listCarsProject2&quot;)">
                 <logger message="#[server.dateTime.format(&quot;dd-MMM-yy hh:mm:ss&quot;).toUpperCase()] #[&quot;List Users P2 Called&quot;]" level="INFO" doc:name="List Cars P2"/>
-                <http:request config-ref="HTTP_Request_Configuration" path="/cars" method="GET" doc:name="HTTP GET CARS"/>
+                <http:request config-ref="HTTP_Request_Configuration" path="q/cars" method="GET" doc:name="HTTP GET CARS"/>
                 <object-to-string-transformer doc:name="Object to String"/>
             </when>
             <otherwise>
@@ -93,7 +93,7 @@ http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smt
         </choice>
         <catch-exception-strategy doc:name="Catch Exception Strategy">
             <logger message="Caught Exception" level="INFO" doc:name="Logger"/>
-            <logger message="Excpetion Caught at: #[payload]" level="ERROR" doc:name="Logger"/>
+            <logger message="Excpetion Caught at: #[payload]" level="INFO" doc:name="Logger"/>
             <set-payload value="Exception Caught. Please try again." doc:name="Set Payload"/>
         </catch-exception-strategy>
     </flow>
