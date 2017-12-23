@@ -24115,3 +24115,206 @@ org.mule.module.http.internal.request.ResponseValidatorException: Response code 
 
 2017-12-23 23:15:55,358 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Caught Exception
 2017-12-23 23:15:55,358 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Excpetion Caught at: org.glassfish.grizzly.utils.BufferInputStream@37c428d4
+2017-12-23 23:31:30,045 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'is_assignment3'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:31:30,050 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ManagementTerminalFlow
+2017-12-23 23:31:30,050 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ManagementTerminalFlow.stage1
+2017-12-23 23:31:30,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: UnsubscribeConfirmationFlow
+2017-12-23 23:31:30,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:31:30,277 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1474482869
+2017-12-23 23:31:30,277 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1928283327
+2017-12-23 23:31:30,277 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: SubscribeConfirmationFlow
+2017-12-23 23:31:30,277 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:31:30,482 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.1347133917
+2017-12-23 23:31:30,482 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.2075774153
+2017-12-23 23:31:30,482 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ManagementWebFlow
+2017-12-23 23:31:30,482 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ManagementWebFlow.stage1
+2017-12-23 23:31:30,531 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: AddSubscriptionWeb
+2017-12-23 23:31:30,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: AddSubscriptionWeb.stage1
+2017-12-23 23:31:30,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: RemoveSubscriptionWeb
+2017-12-23 23:31:30,694 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:31:30,889 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: ListSubscriversWeb
+2017-12-23 23:31:30,889 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: ListSubscriversWeb.stage1
+2017-12-23 23:31:31,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: GetCustomersP2Web
+2017-12-23 23:31:31,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: GetCustomersP2Web.stage1
+2017-12-23 23:31:31,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: GetCarsP2Web
+2017-12-23 23:31:31,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: GetCarsP2Web.stage1
+2017-12-23 23:31:31,504 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2017-12-23 23:31:31,507 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Gmail
+2017-12-23 23:31:31,514 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2017-12-23 23:31:31,515 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2017-12-23 23:31:31,515 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2017-12-23 23:31:31,522 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'is_assignment3'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:31:31,522 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2017-12-23 23:31:31,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ManagementTerminalFlow
+2017-12-23 23:31:31,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ManagementTerminalFlow.stage1
+2017-12-23 23:31:31,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: UnsubscribeConfirmationFlow
+2017-12-23 23:31:31,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:31:31,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1474482869
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1928283327
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SubscribeConfirmationFlow
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1347133917
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.2075774153
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ManagementWebFlow
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ManagementWebFlow.stage1
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: AddSubscriptionWeb
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: AddSubscriptionWeb.stage1
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: RemoveSubscriptionWeb
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: ListSubscriversWeb
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: ListSubscriversWeb.stage1
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: GetCustomersP2Web
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: GetCustomersP2Web.stage1
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: GetCarsP2Web
+2017-12-23 23:31:31,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: GetCarsP2Web.stage1
+2017-12-23 23:31:31,526 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2017-12-23 23:31:31,529 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Disconnected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=stop
+  this=1e4dca08
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2017-12-23 23:31:31,530 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Gmail
+2017-12-23 23:31:31,549 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@68a37315: startup date [Sat Dec 23 23:15:38 WET 2017]; root of context hierarchy
+2017-12-23 23:31:31,558 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "is_assignment3" shut down normally on: 12/23/17       *
+* 11:31 PM                                                           *
+* Up for: 0 days, 0 hours, 15 mins, 52.318 sec                       *
+**********************************************************************
+2017-12-23 23:31:31,733 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'is_assignment3'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:31:32,265 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-23 23:31:32,274 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-23 23:31:32,292 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-23 23:31:32,292 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-23 23:31:32,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@69093a79: startup date [Sat Dec 23 23:31:32 WET 2017]; root of context hierarchy
+2017-12-23 23:31:32,544 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.config.spring.parsers.specific.MessageProcessorDefinitionParser - Schema warning: Use of element <static-resource-handler> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2017-12-23 23:31:32,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-23 23:31:32,709 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-23 23:31:32,709 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-23 23:31:32,885 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx2.log
+2017-12-23 23:31:32,886 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx2.log
+2017-12-23 23:31:32,888 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2017-12-23 23:31:32,927 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-23 23:31:32,930 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ManagementTerminalFlow
+2017-12-23 23:31:32,930 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@23d8b827
+2017-12-23 23:31:32,938 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ManagementTerminalFlow.stage1
+2017-12-23 23:31:32,939 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.cxf.config.WebServiceFactoryBean - Built CXF Inbound MessageProcessor for service class is_assignment3.Management_Web
+2017-12-23 23:31:33,064 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: UnsubscribeConfirmationFlow
+2017-12-23 23:31:33,064 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@1ab1287f
+2017-12-23 23:31:33,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:31:33,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.428535996
+2017-12-23 23:31:33,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1139497797
+2017-12-23 23:31:33,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SubscribeConfirmationFlow
+2017-12-23 23:31:33,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@557aa225
+2017-12-23 23:31:33,080 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:31:33,080 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.118725157
+2017-12-23 23:31:33,080 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.819180812
+2017-12-23 23:31:33,080 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ManagementWebFlow
+2017-12-23 23:31:33,081 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3fc5add2
+2017-12-23 23:31:33,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ManagementWebFlow.stage1
+2017-12-23 23:31:33,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AddSubscriptionWeb
+2017-12-23 23:31:33,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@488a27fe
+2017-12-23 23:31:33,097 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AddSubscriptionWeb.stage1
+2017-12-23 23:31:33,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: RemoveSubscriptionWeb
+2017-12-23 23:31:33,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6994ccd7
+2017-12-23 23:31:33,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:31:33,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ListSubscriversWeb
+2017-12-23 23:31:33,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@19a98dbf
+2017-12-23 23:31:33,118 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ListSubscriversWeb.stage1
+2017-12-23 23:31:33,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetCustomersP2Web
+2017-12-23 23:31:33,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@66fa6780
+2017-12-23 23:31:33,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetCustomersP2Web.stage1
+2017-12-23 23:31:33,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetCarsP2Web
+2017-12-23 23:31:33,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@14215f99
+2017-12-23 23:31:33,134 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetCarsP2Web.stage1
+2017-12-23 23:31:33,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-23 23:31:33,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-23 23:31:33,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'is_assignment3'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:31:33,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-23 23:31:33,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-23 23:31:33,202 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2017-12-23 23:31:33,203 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=1907cba7
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2017-12-23 23:31:33,204 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=1907cba7
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2017-12-23 23:31:33,204 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2017-12-23 23:31:33,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:31:33,213 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-23 23:31:33,218 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ManagementTerminalFlow
+2017-12-23 23:31:33,218 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ManagementTerminalFlow.stage1
+2017-12-23 23:31:33,223 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: UnsubscribeConfirmationFlow
+2017-12-23 23:31:33,224 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:31:33,227 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.428535996
+2017-12-23 23:31:33,229 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1139497797
+2017-12-23 23:31:33,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SubscribeConfirmationFlow
+2017-12-23 23:31:33,232 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:31:33,235 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.118725157
+2017-12-23 23:31:33,236 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.819180812
+2017-12-23 23:31:33,236 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ManagementWebFlow
+2017-12-23 23:31:33,236 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ManagementWebFlow.stage1
+2017-12-23 23:31:33,247 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AddSubscriptionWeb
+2017-12-23 23:31:33,247 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AddSubscriptionWeb.stage1
+2017-12-23 23:31:33,250 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: RemoveSubscriptionWeb
+2017-12-23 23:31:33,250 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:31:33,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ListSubscriversWeb
+2017-12-23 23:31:33,254 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ListSubscriversWeb.stage1
+2017-12-23 23:31:33,256 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetCustomersP2Web
+2017-12-23 23:31:33,256 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetCustomersP2Web.stage1
+2017-12-23 23:31:33,259 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetCarsP2Web
+2017-12-23 23:31:33,260 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetCarsP2Web.stage1
+2017-12-23 23:31:33,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-23 23:31:33,311 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.is_assignment3:type=Connector,name="Gmail"
+2017-12-23 23:31:33,313 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: is_assignment3                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
