@@ -24318,3 +24318,458 @@ org.mule.module.http.internal.request.ResponseValidatorException: Response code 
 *   Batch module default engine                                      *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2017-12-23 23:33:20,146 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'is_assignment3'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:33:20,639 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-23 23:33:21,283 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-23 23:33:21,697 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-23 23:33:21,697 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-23 23:33:21,926 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2f08c4b: startup date [Sat Dec 23 23:33:21 WET 2017]; root of context hierarchy
+2017-12-23 23:33:26,746 [main] WARN  org.mule.config.spring.parsers.specific.MessageProcessorDefinitionParser - Schema warning: Use of element <static-resource-handler> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2017-12-23 23:33:28,751 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-23 23:33:31,452 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-23 23:33:31,452 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-23 23:33:33,684 [main] WARN  org.springframework.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'port' being accessed! Ambiguous write methods found next to actually used [public void org.mule.endpoint.URIBuilder.setPort(java.lang.String)]: [public void org.mule.endpoint.URIBuilder.setPort(int)]
+2017-12-23 23:33:35,319 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-23 23:33:36,936 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx2.log
+2017-12-23 23:33:37,030 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx2.log
+2017-12-23 23:33:37,038 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2017-12-23 23:33:37,404 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-23 23:33:37,411 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ManagementTerminalFlow
+2017-12-23 23:33:37,417 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6274f21c
+2017-12-23 23:33:37,568 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ManagementTerminalFlow.stage1
+2017-12-23 23:33:37,683 [main] INFO  org.mule.module.cxf.config.WebServiceFactoryBean - Built CXF Inbound MessageProcessor for service class is_assignment3.Management_Web
+2017-12-23 23:33:40,496 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: UnsubscribeConfirmationFlow
+2017-12-23 23:33:40,497 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5a3cf878
+2017-12-23 23:33:40,509 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:33:40,510 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.2039328061
+2017-12-23 23:33:40,512 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1286437308
+2017-12-23 23:33:40,513 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SubscribeConfirmationFlow
+2017-12-23 23:33:40,513 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@314b7945
+2017-12-23 23:33:40,526 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:33:40,532 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.376660032
+2017-12-23 23:33:40,544 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.650797503
+2017-12-23 23:33:40,547 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ManagementWebFlow
+2017-12-23 23:33:40,583 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3d40498a
+2017-12-23 23:33:40,658 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ManagementWebFlow.stage1
+2017-12-23 23:33:40,680 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AddSubscriptionWeb
+2017-12-23 23:33:40,680 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@563317c1
+2017-12-23 23:33:40,728 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AddSubscriptionWeb.stage1
+2017-12-23 23:33:40,732 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: RemoveSubscriptionWeb
+2017-12-23 23:33:40,733 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@43e8f1c
+2017-12-23 23:33:40,747 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:33:40,748 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ListSubscriversWeb
+2017-12-23 23:33:40,749 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5fb7ab9c
+2017-12-23 23:33:40,759 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ListSubscriversWeb.stage1
+2017-12-23 23:33:40,760 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetCustomersP2Web
+2017-12-23 23:33:40,760 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@51ed2f68
+2017-12-23 23:33:40,915 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetCustomersP2Web.stage1
+2017-12-23 23:33:40,916 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetCarsP2Web
+2017-12-23 23:33:40,916 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@67e77f52
+2017-12-23 23:33:40,937 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetCarsP2Web.stage1
+2017-12-23 23:33:42,195 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-23 23:33:42,195 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-23 23:33:42,210 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'is_assignment3'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:33:42,240 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-23 23:33:42,241 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-23 23:33:42,495 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2017-12-23 23:33:42,503 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=193eb1ba
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2017-12-23 23:33:42,503 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=193eb1ba
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2017-12-23 23:33:42,504 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2017-12-23 23:33:42,510 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:33:42,530 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-23 23:33:42,534 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ManagementTerminalFlow
+2017-12-23 23:33:42,536 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ManagementTerminalFlow.stage1
+2017-12-23 23:33:42,568 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: UnsubscribeConfirmationFlow
+2017-12-23 23:33:42,570 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:33:42,579 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.2039328061
+2017-12-23 23:33:42,614 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1286437308
+2017-12-23 23:33:42,615 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SubscribeConfirmationFlow
+2017-12-23 23:33:42,615 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:33:42,619 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.376660032
+2017-12-23 23:33:42,620 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.650797503
+2017-12-23 23:33:42,620 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ManagementWebFlow
+2017-12-23 23:33:42,622 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ManagementWebFlow.stage1
+2017-12-23 23:33:42,628 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AddSubscriptionWeb
+2017-12-23 23:33:42,628 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AddSubscriptionWeb.stage1
+2017-12-23 23:33:42,635 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: RemoveSubscriptionWeb
+2017-12-23 23:33:42,635 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:33:42,639 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ListSubscriversWeb
+2017-12-23 23:33:42,639 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ListSubscriversWeb.stage1
+2017-12-23 23:33:42,645 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetCustomersP2Web
+2017-12-23 23:33:42,645 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetCustomersP2Web.stage1
+2017-12-23 23:33:42,649 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetCarsP2Web
+2017-12-23 23:33:42,649 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetCarsP2Web.stage1
+2017-12-23 23:33:43,188 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-23 23:33:43,284 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.is_assignment3:type=Connector,name="Gmail"
+2017-12-23 23:33:43,324 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: is_assignment3                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-23 23:34:59,384 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 23-DEC-17 11:34:59 List Users P2 Called
+2017-12-23 23:34:59,924 [[is_assignment3].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.CatchMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Error sending HTTP request to http://localhost:8080/projeto2-web/rest/api/customers.
+Payload               : {}
+Payload Type          : [Ljava.lang.Object;
+Element               : /ManagementTerminalFlow/processors/1/3/1 @ is_assignment3:is_assignment3.xml:80 (HTTP GET CUSTOMERS)
+Element XML           : <http:request config-ref="HTTP_Request_Configuration" path="/customers" method="GET" doc:name="HTTP GET CUSTOMERS"></http:request>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler.onConnectedAsync(TCPNIOConnectorHandler.java:210)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler$1.connected(TCPNIOConnectorHandler.java:158)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.onConnect(TCPNIOConnection.java:258)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:530)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:415)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:384)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:348)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:279)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+2017-12-23 23:34:59,926 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Caught Exception
+2017-12-23 23:34:59,949 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Excpetion Caught at: [Ljava.lang.Object;@bb592ff
+2017-12-23 23:35:01,135 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 23-DEC-17 11:35:01 List Users P2 Called
+2017-12-23 23:35:01,143 [[is_assignment3].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.CatchMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Error sending HTTP request to http://localhost:8080/projeto2-web/rest/api/cars.
+Payload               : {}
+Payload Type          : [Ljava.lang.Object;
+Element               : /ManagementTerminalFlow/processors/1/4/1 @ is_assignment3:is_assignment3.xml:86 (HTTP GET CARS)
+Element XML           : <http:request config-ref="HTTP_Request_Configuration" path="/cars" method="GET" doc:name="HTTP GET CARS"></http:request>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler.onConnectedAsync(TCPNIOConnectorHandler.java:210)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler$1.connected(TCPNIOConnectorHandler.java:158)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.onConnect(TCPNIOConnection.java:258)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:530)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:415)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:384)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:348)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:279)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+2017-12-23 23:35:01,143 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Caught Exception
+2017-12-23 23:35:01,144 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Excpetion Caught at: [Ljava.lang.Object;@5ed7a131
+2017-12-23 23:35:31,840 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 23-DEC-17 11:35:31 List Users P2 Called
+2017-12-23 23:35:32,728 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ListCustomers>
+    <customer id="1" email="tomas@hotmail.com">
+        <firstName>Tomas</firstName>
+        <lastName>Carvalho</lastName>
+        <cars>
+            <car id="1" brand="Mercedes" model="SL63AMG" month="Jully" imageUrl="/images/dac32e85-946b-49b2-9d70-112e34bc7d39dsc_4572.jpg" year="2016" price="1000" mileage="20000" ownerId="1"/>
+            <car id="4" brand="Mini" model="OneD" month="Maio" imageUrl="/images/4306e7d9-30ea-4991-854b-82f07b17ee6057419575_1_1080x720_mini-mini-one-d-vila-nova-de-gaia.jpg" year="2013" price="15990" mileage="75869" ownerId="1"/>
+            <car id="5" brand="BMW" model="X1" month="Junho" imageUrl="/images/1d70f8a1-3fb5-45d7-95e5-76bd1f24632756625775_1_1080x720_bmw-x1-18-d-sdrive-vila-nova-de-gaia.jpg" year="2011" price="20990" mileage="67000" ownerId="1"/>
+            <car id="6" brand="BMW" model="118" month="Outubro" imageUrl="/images/4b77cf82-210e-4782-80b4-30859be3e5b055469800_1_1080x720_rev001.jpg" year="2015" price="23799" mileage="63000" ownerId="1"/>
+            <car id="7" brand="BMW" model="116M" month="Junho" imageUrl="/images/cac05e2b-38db-46a3-a0a8-5977a8378ebe57098910_1_1080x720_rev001.jpg" year="2017" price="34900" mileage="1000" ownerId="1"/>
+            <car id="3" brand="BMW" model="M5" month="June" imageUrl="/images/3ec2d5d2-0d2d-4092-89de-97be36f4439353864975_1_1080x720_rev001.jpg" year="2017" price="120000" mileage="20000" ownerId="1"/>
+        </cars>
+    </customer>
+    <customer id="2" email="tomcarvalhoc@hotmail.com">
+        <firstName>Tomas</firstName>
+        <lastName>Carvalho</lastName>
+        <cars/>
+    </customer>
+    <customer id="4" email="jorge@hotmail.com">
+        <firstName>Jorge</firstName>
+        <lastName>Araujo</lastName>
+        <cars/>
+    </customer>
+</ListCustomers>
+
+
+
+2017-12-23 23:35:33,834 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 23-DEC-17 11:35:33 List Users P2 Called
+2017-12-23 23:38:22,823 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'is_assignment3'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:38:22,994 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2017-12-23 23:38:23,151 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2017-12-23 23:38:23,501 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2017-12-23 23:38:23,502 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2017-12-23 23:38:23,675 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2f08c4b: startup date [Sat Dec 23 23:38:23 WET 2017]; root of context hierarchy
+2017-12-23 23:38:25,925 [main] WARN  org.mule.config.spring.parsers.specific.MessageProcessorDefinitionParser - Schema warning: Use of element <static-resource-handler> is deprecated.  HTTP transport is deprecated and will be removed in Mule 4.0. Use HTTP module instead..
+2017-12-23 23:38:26,453 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-12-23 23:38:27,072 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-23 23:38:27,072 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2017-12-23 23:38:27,618 [main] WARN  org.springframework.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'port' being accessed! Ambiguous write methods found next to actually used [public void org.mule.endpoint.URIBuilder.setPort(java.lang.String)]: [public void org.mule.endpoint.URIBuilder.setPort(int)]
+2017-12-23 23:38:28,226 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2017-12-23 23:38:28,978 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-tx-log/tx2.log
+2017-12-23 23:38:28,999 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx1.log and /Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/./.mule/is_assignment3/queue-xa-tx-log/tx2.log
+2017-12-23 23:38:29,003 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2017-12-23 23:38:29,222 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2017-12-23 23:38:29,226 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ManagementTerminalFlow
+2017-12-23 23:38:29,228 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@6274f21c
+2017-12-23 23:38:29,270 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ManagementTerminalFlow.stage1
+2017-12-23 23:38:29,409 [main] INFO  org.mule.module.cxf.config.WebServiceFactoryBean - Built CXF Inbound MessageProcessor for service class is_assignment3.Management_Web
+2017-12-23 23:38:30,265 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: UnsubscribeConfirmationFlow
+2017-12-23 23:38:30,265 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5a3cf878
+2017-12-23 23:38:30,276 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:38:30,277 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.2039328061
+2017-12-23 23:38:30,280 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1286437308
+2017-12-23 23:38:30,281 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SubscribeConfirmationFlow
+2017-12-23 23:38:30,281 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@314b7945
+2017-12-23 23:38:30,288 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:38:30,288 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.376660032
+2017-12-23 23:38:30,289 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.650797503
+2017-12-23 23:38:30,291 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ManagementWebFlow
+2017-12-23 23:38:30,291 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@3d40498a
+2017-12-23 23:38:30,299 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ManagementWebFlow.stage1
+2017-12-23 23:38:30,309 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: AddSubscriptionWeb
+2017-12-23 23:38:30,310 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@563317c1
+2017-12-23 23:38:30,327 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: AddSubscriptionWeb.stage1
+2017-12-23 23:38:30,332 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: RemoveSubscriptionWeb
+2017-12-23 23:38:30,332 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@43e8f1c
+2017-12-23 23:38:30,342 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:38:30,347 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ListSubscriversWeb
+2017-12-23 23:38:30,349 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@5fb7ab9c
+2017-12-23 23:38:30,370 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ListSubscriversWeb.stage1
+2017-12-23 23:38:30,378 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetCustomersP2Web
+2017-12-23 23:38:30,381 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@51ed2f68
+2017-12-23 23:38:30,409 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetCustomersP2Web.stage1
+2017-12-23 23:38:30,409 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetCarsP2Web
+2017-12-23 23:38:30,409 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@67e77f52
+2017-12-23 23:38:30,420 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetCarsP2Web.stage1
+2017-12-23 23:38:30,887 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-23 23:38:30,887 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Assignment3/SystemsIntegration_Assignment3/.mule/apps/is_assignment3/is_assignment3.xml'}]"
+2017-12-23 23:38:30,902 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'is_assignment3'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:38:30,917 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2017-12-23 23:38:30,917 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2017-12-23 23:38:30,994 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2017-12-23 23:38:31,000 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=193eb1ba
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2017-12-23 23:38:31,000 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=193eb1ba
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2017-12-23 23:38:31,001 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2017-12-23 23:38:31,006 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2017-12-23 23:38:31,017 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2017-12-23 23:38:31,021 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ManagementTerminalFlow
+2017-12-23 23:38:31,022 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ManagementTerminalFlow.stage1
+2017-12-23 23:38:31,029 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: UnsubscribeConfirmationFlow
+2017-12-23 23:38:31,029 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: UnsubscribeConfirmationFlow.stage1
+2017-12-23 23:38:31,035 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.2039328061
+2017-12-23 23:38:31,053 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.1286437308
+2017-12-23 23:38:31,054 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: SubscribeConfirmationFlow
+2017-12-23 23:38:31,056 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: SubscribeConfirmationFlow.stage1
+2017-12-23 23:38:31,060 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.376660032
+2017-12-23 23:38:31,061 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.650797503
+2017-12-23 23:38:31,061 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ManagementWebFlow
+2017-12-23 23:38:31,062 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ManagementWebFlow.stage1
+2017-12-23 23:38:31,065 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: AddSubscriptionWeb
+2017-12-23 23:38:31,065 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: AddSubscriptionWeb.stage1
+2017-12-23 23:38:31,069 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: RemoveSubscriptionWeb
+2017-12-23 23:38:31,069 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: RemoveSubscriptionWeb.stage1
+2017-12-23 23:38:31,072 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ListSubscriversWeb
+2017-12-23 23:38:31,072 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ListSubscriversWeb.stage1
+2017-12-23 23:38:31,075 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetCustomersP2Web
+2017-12-23 23:38:31,075 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetCustomersP2Web.stage1
+2017-12-23 23:38:31,079 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: GetCarsP2Web
+2017-12-23 23:38:31,079 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: GetCarsP2Web.stage1
+2017-12-23 23:38:31,373 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2017-12-23 23:38:31,453 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.is_assignment3:type=Connector,name="Gmail"
+2017-12-23 23:38:31,463 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: is_assignment3                                        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2017-12-23 23:40:30,576 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 23-DEC-17 11:40:30 List Users P2 Called
+2017-12-23 23:40:30,677 [[is_assignment3].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.CatchMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Error sending HTTP request to http://localhost:8080/projeto2-web/rest/api/cars.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /GetCarsP2Web/processors/1 @ is_assignment3:is_assignment3.xml:244 (Copy_of_HTTP GET CARS)
+Element XML           : <http:request config-ref="HTTP_Request_Configuration" path="/cars" method="GET" doc:name="Copy_of_HTTP GET CARS"></http:request>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler.onConnectedAsync(TCPNIOConnectorHandler.java:210)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler$1.connected(TCPNIOConnectorHandler.java:158)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.onConnect(TCPNIOConnection.java:258)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:530)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:415)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:384)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:348)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:279)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+2017-12-23 23:40:30,678 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Caught Exception
+2017-12-23 23:40:30,684 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Excpetion Caught at: null
+2017-12-23 23:40:34,960 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 23-DEC-17 11:40:34 List Users P2 Called
+2017-12-23 23:40:34,965 [[is_assignment3].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.CatchMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Error sending HTTP request to http://localhost:8080/projeto2-web/rest/api/cars.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /GetCarsP2Web/processors/1 @ is_assignment3:is_assignment3.xml:244 (Copy_of_HTTP GET CARS)
+Element XML           : <http:request config-ref="HTTP_Request_Configuration" path="/cars" method="GET" doc:name="Copy_of_HTTP GET CARS"></http:request>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler.onConnectedAsync(TCPNIOConnectorHandler.java:210)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler$1.connected(TCPNIOConnectorHandler.java:158)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.onConnect(TCPNIOConnection.java:258)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:530)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:415)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:384)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:348)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:279)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+2017-12-23 23:40:34,965 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Caught Exception
+2017-12-23 23:40:34,966 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Excpetion Caught at: null
+2017-12-23 23:40:38,228 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - 23-DEC-17 11:40:38 List Users P2 Called
+2017-12-23 23:40:38,232 [[is_assignment3].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.CatchMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Error sending HTTP request to http://localhost:8080/projeto2-web/rest/api/cars.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /GetCarsP2Web/processors/1 @ is_assignment3:is_assignment3.xml:244 (Copy_of_HTTP GET CARS)
+Element XML           : <http:request config-ref="HTTP_Request_Configuration" path="/cars" method="GET" doc:name="Copy_of_HTTP GET CARS"></http:request>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler.onConnectedAsync(TCPNIOConnectorHandler.java:210)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler$1.connected(TCPNIOConnectorHandler.java:158)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.onConnect(TCPNIOConnection.java:258)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:530)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:415)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:384)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:348)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:279)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+2017-12-23 23:40:38,232 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Caught Exception
+2017-12-23 23:40:38,232 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Excpetion Caught at: null
+2017-12-23 23:40:38,643 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/assets/css/bootstrap.min.css
+2017-12-23 23:40:38,643 [[is_assignment3].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([get])/cars/, ([get])/customers/, ([get])/management/unsubscribe/, ([post])/addSubscriber/, ([get])/subscribers/, (*)/management/, ([post])/removeSubscriber/, (*)/, ([get])/management/subscribe/]
+2017-12-23 23:40:38,647 [[is_assignment3].HTTP_Listener_Configuration.worker.02] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/assets/css/3-col-portfolio.css
+2017-12-23 23:40:38,647 [[is_assignment3].HTTP_Listener_Configuration.worker.02] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([get])/cars/, ([get])/customers/, ([get])/management/unsubscribe/, ([post])/addSubscriber/, ([get])/subscribers/, (*)/management/, ([post])/removeSubscriber/, (*)/, ([get])/management/subscribe/]
+2017-12-23 23:40:38,882 [[is_assignment3].HTTP_Listener_Configuration.worker.02] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/assets/css/bootstrap.min.css
+2017-12-23 23:40:38,882 [[is_assignment3].HTTP_Listener_Configuration.worker.02] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([get])/cars/, ([get])/customers/, ([get])/management/unsubscribe/, ([post])/addSubscriber/, ([get])/subscribers/, (*)/management/, ([post])/removeSubscriber/, (*)/, ([get])/management/subscribe/]
+2017-12-23 23:40:38,888 [[is_assignment3].HTTP_Listener_Configuration.worker.02] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/assets/css/3-col-portfolio.css
+2017-12-23 23:40:38,888 [[is_assignment3].HTTP_Listener_Configuration.worker.02] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([get])/cars/, ([get])/customers/, ([get])/management/unsubscribe/, ([post])/addSubscriber/, ([get])/subscribers/, (*)/management/, ([post])/removeSubscriber/, (*)/, ([get])/management/subscribe/]
