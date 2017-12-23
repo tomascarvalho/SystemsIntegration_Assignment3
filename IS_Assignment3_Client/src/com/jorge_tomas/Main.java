@@ -10,6 +10,10 @@ import java.util.regex.Pattern;
 
 
 
+
+
+
+
 public class Main {
 
     private static final Pattern VALID_EMAIL_ADDRESS_REGEX =
@@ -58,6 +62,8 @@ public class Main {
         System.out.println("1 - Add follower");
         System.out.println("2 - List followers");
         System.out.println("3 - Remove follower");
+        System.out.println("4 - List users in Project2");
+        System.out.println("5 - List cars in Project2");
         System.out.println("\n0 - Exit");
         System.out.print("Choice: ");
     }
@@ -117,6 +123,15 @@ public class Main {
                     email = inputEmail();
                     brand = inputBrand();
                     System.out.println(managementWeb.removeFollower(email, brand));
+                    break;
+                case "4":
+                    System.out.println(managementWeb.listUsersProject2());
+                    break;
+                case "5":
+                    //Gson gson = new Gson();
+                    //String jsonInString = "{'name' : 'mkyong'}";
+                    //Staff staff = gson.fromJson(jsonInString, Staff.class)
+                    System.out.println(managementWeb.listCarsProject2());
                     break;
                 default:
                     System.out.println("Invalid input!");

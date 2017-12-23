@@ -1,5 +1,7 @@
 package is_assignment3;
 
+import java.util.ArrayList;
+
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
@@ -15,6 +17,14 @@ public class Management_Web {
 	}
 	@WebMethod
 	public String removeFollower(String email, String brand) {
+		return "";
+	}
+	@WebMethod
+	public String listUsersProject2() {
+		return "";
+	}
+	@WebMethod
+	public String listCarsProject2() {
 		return "";
 	}
 }

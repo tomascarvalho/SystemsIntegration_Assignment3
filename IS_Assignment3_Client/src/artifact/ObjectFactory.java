@@ -25,11 +25,15 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _RemoveFollower_QNAME = new QName("http://is_assignment3/", "removeFollower");
+    private final static QName _ListCarsProject2_QNAME = new QName("http://is_assignment3/", "listCarsProject2");
+    private final static QName _ListCarsProject2Response_QNAME = new QName("http://is_assignment3/", "listCarsProject2Response");
     private final static QName _AddFollower_QNAME = new QName("http://is_assignment3/", "addFollower");
+    private final static QName _ListUsersProject2Response_QNAME = new QName("http://is_assignment3/", "listUsersProject2Response");
     private final static QName _ListFollowers_QNAME = new QName("http://is_assignment3/", "listFollowers");
     private final static QName _ListFollowersResponse_QNAME = new QName("http://is_assignment3/", "listFollowersResponse");
     private final static QName _RemoveFollowerResponse_QNAME = new QName("http://is_assignment3/", "removeFollowerResponse");
     private final static QName _AddFollowerResponse_QNAME = new QName("http://is_assignment3/", "addFollowerResponse");
+    private final static QName _ListUsersProject2_QNAME = new QName("http://is_assignment3/", "listUsersProject2");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: artifact
@@ -47,11 +51,35 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ListCarsProject2 }
+     * 
+     */
+    public ListCarsProject2 createListCarsProject2() {
+        return new ListCarsProject2();
+    }
+
+    /**
+     * Create an instance of {@link ListCarsProject2Response }
+     * 
+     */
+    public ListCarsProject2Response createListCarsProject2Response() {
+        return new ListCarsProject2Response();
+    }
+
+    /**
      * Create an instance of {@link AddFollower }
      * 
      */
     public AddFollower createAddFollower() {
         return new AddFollower();
+    }
+
+    /**
+     * Create an instance of {@link ListUsersProject2Response }
+     * 
+     */
+    public ListUsersProject2Response createListUsersProject2Response() {
+        return new ListUsersProject2Response();
     }
 
     /**
@@ -87,6 +115,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ListUsersProject2 }
+     * 
+     */
+    public ListUsersProject2 createListUsersProject2() {
+        return new ListUsersProject2();
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RemoveFollower }{@code >}}
      * 
      */
@@ -96,12 +132,39 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListCarsProject2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://is_assignment3/", name = "listCarsProject2")
+    public JAXBElement<ListCarsProject2> createListCarsProject2(ListCarsProject2 value) {
+        return new JAXBElement<ListCarsProject2>(_ListCarsProject2_QNAME, ListCarsProject2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListCarsProject2Response }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://is_assignment3/", name = "listCarsProject2Response")
+    public JAXBElement<ListCarsProject2Response> createListCarsProject2Response(ListCarsProject2Response value) {
+        return new JAXBElement<ListCarsProject2Response>(_ListCarsProject2Response_QNAME, ListCarsProject2Response.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddFollower }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://is_assignment3/", name = "addFollower")
     public JAXBElement<AddFollower> createAddFollower(AddFollower value) {
         return new JAXBElement<AddFollower>(_AddFollower_QNAME, AddFollower.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListUsersProject2Response }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://is_assignment3/", name = "listUsersProject2Response")
+    public JAXBElement<ListUsersProject2Response> createListUsersProject2Response(ListUsersProject2Response value) {
+        return new JAXBElement<ListUsersProject2Response>(_ListUsersProject2Response_QNAME, ListUsersProject2Response.class, null, value);
     }
 
     /**
@@ -138,6 +201,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://is_assignment3/", name = "addFollowerResponse")
     public JAXBElement<AddFollowerResponse> createAddFollowerResponse(AddFollowerResponse value) {
         return new JAXBElement<AddFollowerResponse>(_AddFollowerResponse_QNAME, AddFollowerResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListUsersProject2 }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://is_assignment3/", name = "listUsersProject2")
+    public JAXBElement<ListUsersProject2> createListUsersProject2(ListUsersProject2 value) {
+        return new JAXBElement<ListUsersProject2>(_ListUsersProject2_QNAME, ListUsersProject2 .class, null, value);
     }
 
 }

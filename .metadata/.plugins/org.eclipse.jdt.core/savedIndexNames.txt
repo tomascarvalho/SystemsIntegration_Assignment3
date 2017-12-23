@@ -26,7 +26,6 @@ INDEX VERSION 1.127+/Users/tomas/Documents/Engenharia Informática/MEI/IS/IS_Ass
 2547881594.index
 4030992092.index
 1696451534.index
-1293286171.index
 2649789972.index
 999580780.index
 3894706924.index

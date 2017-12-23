@@ -42,6 +42,17 @@ public interface ManagementWeb {
 
     /**
      * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "listCarsProject2", targetNamespace = "http://is_assignment3/", className = "artifact.ListCarsProject2")
+    @ResponseWrapper(localName = "listCarsProject2Response", targetNamespace = "http://is_assignment3/", className = "artifact.ListCarsProject2Response")
+    public String listCarsProject2();
+
+    /**
+     * 
      * @param arg3
      * @param arg2
      * @param arg4
@@ -76,5 +87,16 @@ public interface ManagementWeb {
     @RequestWrapper(localName = "listFollowers", targetNamespace = "http://is_assignment3/", className = "artifact.ListFollowers")
     @ResponseWrapper(localName = "listFollowersResponse", targetNamespace = "http://is_assignment3/", className = "artifact.ListFollowersResponse")
     public String listFollowers();
+
+    /**
+     * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "listUsersProject2", targetNamespace = "http://is_assignment3/", className = "artifact.ListUsersProject2")
+    @ResponseWrapper(localName = "listUsersProject2Response", targetNamespace = "http://is_assignment3/", className = "artifact.ListUsersProject2Response")
+    public String listUsersProject2();
 
 }
