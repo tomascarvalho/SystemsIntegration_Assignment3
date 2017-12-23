@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Built-By: tomas
+Class-Path: lib/projeto2-business-0.0.1-SNAPSHOT.jar lib/projeto2-data
+ -0.0.1-SNAPSHOT.jar lib/log4j-1.2.17.jar lib/jsoup-1.10.3.jar lib/com
+ mons-beanutils-1.9.3.jar lib/commons-collections-3.2.2.jar lib/netty-
+ all-4.1.9.Final.jar lib/artemis-commons-1.5.5.jbossorg-007.jar lib/ar
+ temis-core-client-1.5.5.jbossorg-007.jar lib/artemis-hqclient-protoco
+ l-1.5.5.jbossorg-007.jar lib/artemis-jms-client-1.5.5.jbossorg-007.ja
+ r lib/artemis-selector-1.5.5.jbossorg-007.jar lib/javax.json-1.0.4.ja
+ r lib/jboss-marshalling-2.0.0.Final.jar lib/jboss-marshalling-river-2
+ .0.0.Final.jar lib/jboss-remoting-5.0.0.Final.jar lib/jboss-jms-api_2
+ .0_spec-1.0.1.Final.jar lib/xnio-api-3.5.1.Final.jar lib/xnio-nio-3.5
+ .1.Final.jar lib/jgroups-3.6.13.Final.jar lib/jcl-over-slf4j-1.7.22.j
+ ar lib/wildfly-naming-client-1.0.1.Final.jar lib/wildfly-common-1.2.0
+ .Final.jar lib/wildfly-client-config-1.0.0.Final.jar lib/wildfly-elyt
+ ron-1.1.1.Final.jar lib/guava-20.0.jar lib/gson-2.8.2.jar lib/hiberna
+ te-annotations-3.5.6-Final.jar lib/hibernate-commons-annotations-3.2.
+ 0.Final.jar lib/jstl-1.2.jar log4j-1.2.17.jar jsoup-1.10.3.jar common
+ s-beanutils-1.9.3.jar commons-collections-3.2.2.jar netty-all-4.1.9.F
+ inal.jar artemis-commons-1.5.5.jbossorg-007.jar artemis-core-client-1
+ .5.5.jbossorg-007.jar artemis-hqclient-protocol-1.5.5.jbossorg-007.ja
+ r artemis-jms-client-1.5.5.jbossorg-007.jar artemis-selector-1.5.5.jb
+ ossorg-007.jar javax.json-1.0.4.jar jboss-marshalling-2.0.0.Final.jar
+  jboss-marshalling-river-2.0.0.Final.jar jboss-remoting-5.0.0.Final.j
+ ar jboss-jms-api_2.0_spec-1.0.1.Final.jar xnio-api-3.5.1.Final.jar xn
+ io-nio-3.5.1.Final.jar jgroups-3.6.13.Final.jar jcl-over-slf4j-1.7.22
+ .jar wildfly-naming-client-1.0.1.Final.jar wildfly-common-1.2.0.Final
+ .jar wildfly-client-config-1.0.0.Final.jar wildfly-elytron-1.1.1.Fina
+ l.jar guava-20.0.jar gson-2.8.2.jar hibernate-annotations-3.5.6-Final
+ .jar hibernate-commons-annotations-3.2.0.Final.jar
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_101
+
